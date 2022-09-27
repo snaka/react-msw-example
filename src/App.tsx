@@ -1,5 +1,4 @@
 import { useCallback } from "react";
-import "./App.css";
 
 import { worker } from "./mocks/browser";
 worker.start();
