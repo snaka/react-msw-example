@@ -1,11 +1,8 @@
-import React, { useCallback, useEffect } from "react";
-import logo from "./logo.svg";
+import { useCallback } from "react";
 import "./App.css";
 
-if (process.env.NODE_ENV === "development") {
-  const { worker } = require("./mocks/browser");
-  worker.start();
-}
+import { worker } from "./mocks/browser";
+worker.start();
 
 function App() {
   const handleClick = useCallback(async () => {
